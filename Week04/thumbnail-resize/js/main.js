@@ -2,9 +2,10 @@
 // This will apply the corresponding CSS rule to modify the display the of hte thumbnail images. 
 //  In addition to this, the clicked button should be made active (i.e. add the active class).
 
-var liSm = document.querySelector('.thumbnails-sm');
-var liMd = document.querySelector('.thumbnails-md');
-var liLg = document.querySelector('.thumbnails-lg');
+// var liSm = document.querySelector('.thumbnails-sm');
+// var liMd = document.querySelector('.thumbnails-md');
+// var liLg = document.querySelector('.thumbnails-lg');
+var ulContainer = document.querySelector('ul.thumbnail-sizes');
 
 function thumbNailSizeHandler(evt) {
     var target = evt.target; //evt.targer is the object the event happened on
@@ -41,6 +42,9 @@ function thumbNailSizeHandler(evt) {
     console.log(target);
 }
 
-liSm.addEventListener('click', thumbNailSizeHandler);
-liMd.addEventListener('click', thumbNailSizeHandler);
-liLg.addEventListener('click', thumbNailSizeHandler);
+// liSm.addEventListener('click', thumbNailSizeHandler);
+// liMd.addEventListener('click', thumbNailSizeHandler);
+// liLg.addEventListener('click', thumbNailSizeHandler);
+
+
+ulContainer.addEventListener('click', thumbNailSizeHandler);
