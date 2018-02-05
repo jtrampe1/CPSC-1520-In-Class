@@ -1,0 +1,33 @@
+html{
+    font-size: 16px;
+}
+
+body{
+
+    line-height: 1.5''
+}
+
+/*
+    CSS grid is a 2-dimensional layout system 
+*/
+
+form{
+    display: grid;
+    grid-template-columns: auto 250px;
+    grid-row-gap: 10px;
+    max-width: 350px;
+}
+
+/*
+    CSS Flexbox is a 1-dimensional layout system
+*/
+
+form > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    /*The <div> is a child of the <form> CSS grid*/
+    grid-column: span 2;
+}
+
